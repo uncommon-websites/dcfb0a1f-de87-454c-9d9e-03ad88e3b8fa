@@ -4,74 +4,90 @@
   import Button from '$lib/Button.svelte';
 </script>
 
-<div class="min-h-screen font-sans text-dark bg-cream overflow-x-hidden">
+<div class="min-h-screen font-sans text-dark bg-white overflow-x-hidden">
   <Navbar />
 
   <!-- Hero Section -->
   <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
     <div class="mb-6">
-      <span class="text-xs font-bold tracking-widest text-gray-500 uppercase">The #1 Creator Marketing Platform</span>
+      <span class="text-xs font-bold tracking-widest text-gray-500 uppercase">Performance-Based Creator Marketing</span>
     </div>
     <h1 class="text-5xl md:text-7xl font-serif mb-6 leading-tight">
-      Where B2B brands scale <br class="hidden md:block" /> influencer marketing
+      Turn creator attention into <br class="hidden md:block" /> measurable sales
     </h1>
     <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-      The fastest and easiest way to do influencer marketing at scale.
-      Find the right creators on all platforms, book, collaborate, and pay – all in one place.
+      Launch gamified challenges that drive real results. 100% performance-based pricing with money-back guarantee. 
+      Only pay for views and sales you actually get.
     </p>
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
-      <Button href="#" type="primary">Get access &rarr;</Button>
-      <Button href="#" type="outline">Talk to us</Button>
+      <Button href="#" type="primary">Start a Challenge &rarr;</Button>
+      <Button href="#" type="outline">See Case Studies</Button>
     </div>
 
     <!-- Hero Image Placeholder -->
     <div class="relative w-full max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-white aspect-[16/9] mb-16 group">
-      <!-- Mock UI -->
-      <div class="absolute inset-0 bg-gray-50 p-4">
+      <!-- Challenge Dashboard Mock UI -->
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-50 to-white p-4">
         <div class="h-full w-full bg-white rounded-xl border border-gray-200 shadow-sm p-6 flex flex-col">
             <!-- Header of Mock UI -->
             <div class="flex items-center justify-between mb-6 border-b border-gray-100 pb-4">
                 <div class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-full bg-orange-100"></div>
-                    <div class="h-4 w-32 bg-gray-100 rounded"></div>
+                    <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 text-xs font-bold">🏆</div>
+                    <div class="text-sm font-bold">Summer Challenge</div>
                 </div>
                 <div class="flex gap-2">
-                    <div class="h-8 w-20 bg-gray-100 rounded"></div>
-                    <div class="h-8 w-20 bg-gray-100 rounded"></div>
+                    <div class="h-8 px-3 bg-primary-500 text-white rounded-lg text-xs font-bold flex items-center">Live</div>
+                    <div class="h-8 px-3 bg-gray-100 rounded-lg text-xs font-bold flex items-center">€50K Budget</div>
                 </div>
             </div>
-            <!-- Content of Mock UI -->
+            <!-- Content of Mock UI - Leaderboard -->
             <div class="flex-1 grid grid-cols-12 gap-6">
-                <div class="col-span-3 space-y-3">
-                    <div class="h-4 w-full bg-gray-100 rounded"></div>
-                    <div class="h-4 w-3/4 bg-gray-100 rounded"></div>
-                    <div class="h-4 w-5/6 bg-gray-100 rounded"></div>
+                <div class="col-span-4 space-y-2">
+                    <div class="text-xs font-bold text-gray-500 mb-3">TOP PERFORMERS</div>
+                    <div class="flex items-center gap-2 p-2 bg-yellow-50 rounded-lg border border-yellow-200">
+                        <div class="w-6 h-6 rounded-full bg-yellow-400 flex items-center justify-center text-xs">1</div>
+                        <div class="flex-1 h-3 bg-gray-100 rounded"></div>
+                        <div class="text-xs font-bold">€4.2M</div>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                        <div class="w-6 h-6 rounded-full bg-gray-300 flex items-center justify-center text-xs">2</div>
+                        <div class="flex-1 h-3 bg-gray-100 rounded"></div>
+                        <div class="text-xs font-bold">€1.8M</div>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                        <div class="w-6 h-6 rounded-full bg-orange-300 flex items-center justify-center text-xs">3</div>
+                        <div class="flex-1 h-3 bg-gray-100 rounded"></div>
+                        <div class="text-xs font-bold">€890K</div>
+                    </div>
                 </div>
-                <div class="col-span-9 bg-gray-50 rounded-lg p-4 grid grid-cols-2 gap-4">
-                     <div class="bg-white p-4 rounded shadow-sm h-32"></div>
-                     <div class="bg-white p-4 rounded shadow-sm h-32"></div>
-                     <div class="bg-white p-4 rounded shadow-sm h-32"></div>
-                     <div class="bg-white p-4 rounded shadow-sm h-32"></div>
+                <div class="col-span-8 bg-gradient-to-br from-primary-50 to-white rounded-lg p-4">
+                     <div class="text-xs font-bold text-gray-500 mb-3">REAL-TIME METRICS</div>
+                     <div class="grid grid-cols-2 gap-3">
+                         <div class="bg-white p-3 rounded-lg shadow-sm">
+                             <div class="text-2xl font-bold text-primary-600">20M+</div>
+                             <div class="text-xs text-gray-500">Total Views</div>
+                         </div>
+                         <div class="bg-white p-3 rounded-lg shadow-sm">
+                             <div class="text-2xl font-bold text-green-600">9.0x</div>
+                             <div class="text-xs text-gray-500">ROI</div>
+                         </div>
+                         <div class="bg-white p-3 rounded-lg shadow-sm">
+                             <div class="text-2xl font-bold">789</div>
+                             <div class="text-xs text-gray-500">Sales Today</div>
+                         </div>
+                         <div class="bg-white p-3 rounded-lg shadow-sm">
+                             <div class="text-2xl font-bold">€9.50</div>
+                             <div class="text-xs text-gray-500">CPM</div>
+                         </div>
+                     </div>
                 </div>
             </div>
         </div>
       </div>
       
       <!-- Decorative Elements -->
-      <div class="absolute -left-12 bottom-12 w-24 h-24 bg-orange-brand rounded-full blur-2xl opacity-20"></div>
-      <div class="absolute -right-12 top-12 w-32 h-32 bg-purple-400 rounded-full blur-2xl opacity-20"></div>
-
-      <!-- Cartoon Character (Orange Blob) -->
-      <div class="absolute bottom-[-20px] left-[-40px] w-32 h-32 z-10 hidden md:block">
-          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 90C75 90 90 70 90 50C90 30 70 10 50 10C30 10 10 30 10 50C10 70 25 90 50 90Z" fill="#FF5D2A"/>
-            <circle cx="35" cy="40" r="5" fill="white"/>
-            <circle cx="65" cy="40" r="5" fill="white"/>
-            <path d="M35 60 Q50 70 65 60" stroke="white" stroke-width="3" stroke-linecap="round"/>
-            <!-- Arms -->
-            <path d="M10 50 Q-5 30 15 20" stroke="#FF5D2A" stroke-width="8" stroke-linecap="round"/>
-          </svg>
-      </div>
+      <div class="absolute -left-12 bottom-12 w-24 h-24 bg-primary-300 rounded-full blur-2xl opacity-30"></div>
+      <div class="absolute -right-12 top-12 w-32 h-32 bg-primary-400 rounded-full blur-2xl opacity-20"></div>
     </div>
 
     <!-- Logos -->
